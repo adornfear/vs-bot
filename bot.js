@@ -26,13 +26,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            // !ping
             case 'vs1':
                 bot.sendMessage({
                     to: channelID,
                     message: 'there is a space available for 1 player!'
                 });
-                //break;
+                break;
             case 'vs2':
                 bot.sendMessage({
                     to: channelID,
@@ -40,6 +39,6 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 })
                 break;
             // Just add any case commands if you want to..
-         }
-     }
+         }//switch
+     }//if
 });
